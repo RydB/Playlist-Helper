@@ -1,0 +1,34 @@
+NAME
+	mp3index - a command line music playlist manager
+	
+SYNOPSIS
+	mp3index MUSICFILE [OPTION]
+	
+DESCRIPTION
+	mp3index is a command line music playlist manager which supports
+	playlist creation and editing. Upon startup, mp3index reads the master
+	music index, MUSICFILE. Normally, mp3index reads playlist editing
+	commands from standard input and prints playlists to standard output.
+	It also supports reading playlist editing commands from a script file.
+	
+OPTIONS
+	-V, --version
+		Print version information and exit.
+	-h, --help
+	Print this help and exit.
+	
+PLAYLIST EDITING COMMANDS
+	t	title search of master music index
+	a	artist search of master music index
+	k	keyword search of master music index
+	d	delete song from playlist
+	i	insert song into playlist
+	s	insert search results (from most recent search) into playlist
+	b	move to beginning of playlist
+	e	move to end of playlist
+	p	print playlist
+	q	quit
+	
+FILES
+	MUSICFILE contains a master index of the music collection. Each line
+	contains information for one song in the format “<title>|<artist>”
