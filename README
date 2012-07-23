@@ -1,0 +1,6 @@
+Playlist-Helper
+
+This is a UNIX based program I wrote for a class project.  It makes heavy use of the STL
+and does some basic hashing.  
+
+Its primary function is to create, store, and sort playlists.  
